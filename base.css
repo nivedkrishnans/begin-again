@@ -54,8 +54,7 @@ body{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	padding: 2px 14px 6px 14px;
-	font-size: 16px;
+	padding: 6px 14px 6px 14px;
 	background-color: black;
 
 
@@ -63,12 +62,11 @@ body{
 
 .top-bar-item{
 	box-sizing: border-box;
-	padding: 4px 2px;
+	padding: 4px 6px;
 	margin: 0 2px;
 	text-decoration:none;
 	align-self: flex-end;					/* Why ??*/
 	text-align: center;
-	font-weight: 400;
 	font-size: 18px;
 	color: #d4bb55;
 	height: 36px;
@@ -83,14 +81,11 @@ body{
 }
 
 .active-page{
-	font-weight: 700;
+	font-weight: bold;
 	border-bottom: #d4bb55 solid 2px;
 	background-color: #02070a;
 }
 
-.active-page:hover{
-	border-bottom: #d4bb55 solid 2px;
-}
 
 .top-logo, .top-logo:hover{
 	padding: 0;
@@ -141,7 +136,7 @@ body{
 
 
 
-.ref{
+.ref{		/* ignore for now*/
 	color: white;
 	position: fixed;
 	top: 50%;

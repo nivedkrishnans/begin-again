@@ -56,6 +56,12 @@
 	margin: 2px;
 	transition: all 0.3s ease;
 	cursor: pointer;
+	transform-origin: center;
+}
+
+.event-triangle:hover{
+	height: 55px;
+	width: 83px;
 }
 
 
@@ -107,8 +113,7 @@
 	min-height: 100px;
 	width: 100px;
 	transition: all 0.3s;
-	max-height: 400px;
-	overflow-y: auto;
+	overflow-y: visible;
 	overflow-x: hidden;
 }
 

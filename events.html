@@ -186,8 +186,8 @@
             }
 
             function displayToggle(){
-                document.getElementById("left-pane").style.overflowY = "hidden";
-                document.getElementById("right-pane").style.overflowY = "hidden";
+                //document.getElementById("left-pane").style.overflowY = "hidden";
+                //document.getElementById("right-pane").style.overflowY = "hidden";
                 document.getElementById("close").classList.toggle("closeOut");
                 if(displayEvents){
 
@@ -241,8 +241,8 @@
                     fadeIn("event-name-area" , toggleSpeed);
                     fadeIn("event-sponsors-area" , toggleSpeed);
                     window.setTimeout( function(){
-                        document.getElementById("left-pane").style.overflowY = "auto";
-                        document.getElementById("right-pane").style.overflowY = "auto";
+                        //document.getElementById("left-pane").style.overflowY = "auto";
+                        //document.getElementById("right-pane").style.overflowY = "auto";
                     }, toggleSpeed);
                 }
 
