@@ -68,7 +68,7 @@ body{
     font-family: "Helvetica";
     font-weight: bold;
     border-radius: 50%;
-    background-image: url(test.jpg);
+    background-image: url(test.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
