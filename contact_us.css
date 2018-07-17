@@ -63,6 +63,8 @@ body{
 .image{
     height:200px;
     width:200px;
+    min-width: 200px;
+    min-height: 200px;
     background-color: darkgray;
     color:white;
     font-family: "Helvetica";
@@ -130,6 +132,46 @@ body{
     
 }
 
+/* media query for phones */
+
+@media screen and (max-width: 480px) {    
+    .container{
+        /* changes the display of the text for the coordinators from side to bottom of image*/
+        height:100%;
+        width:100%;    
+        flex-wrap: nowrap;
+        flex-direction: column;
+        
+        margin-top:10px;
+        
+    }
+    
+    .image{
+        height:80vw;
+        width:80%;
+        max-width:200px;
+        max-height:200px;
+    }
+    
+    #top-bar{
+        /* the shadow is probably gonna be removed later, for now just used as a visual seperator */
+        box-shadow: 0 3px 30px -6px blue;
+    }
+    
+    .image{
+        /*center the image in the viewport */
+        margin:0 auto;
+    }
+    
+    .top-bar-item{
+        display: none;
+    }  
+    
+    #logo{
+        display: block;
+    }
+}
+
 /*firefox doesn't support custom scrollbars so this is kindoff a hack to make firefox use the normal scrolbar while the custom scroll bar is still applied to chrome*/
 @-moz-document url-prefix()
     { 
@@ -154,3 +196,5 @@ body{
 
 
 }
+
+
