@@ -8,6 +8,68 @@ body{
 	font-family: 'Lato';
 	
 }
+#top-bar{
+    position: fixed;
+    width:100%
+}
+#box{
+    height: 36px;
+    width: 100%;
+}
+.menu{
+    height: 36px;
+    width: 15%;
+    float: left;
+    border-radius: 2px;
+    transition: 0.2s ease-out;
+    background-color: aqua;
+}
+#pravega{
+    height: 36px;
+    width: 70%;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+}
+#buffer{
+    display: none;
+}
+.top-bar-item{
+    width: 150px;
+    height: 30px;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    color: #d4bb55;
+    background-color: black;
+}
+.top-logo{
+    display: none;
+}
+#social-bar{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #d4bb55;
+}
+@media only screen and (min-width: 992px){
+body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	line-height: 1.5;
+	color: #d4bb55;
+	font-family: 'Lato';
+	
+}
 
 #bg{	
 	position: fixed;
@@ -48,6 +110,30 @@ body{
 	top: 0;
 	left: 0;
 	right: 0;
+/*	display: flex;*/
+	width: 100%;
+/*
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 6px 14px 6px 14px;
+	background-color: black;
+*/
+
+
+}
+#box{
+    display: none;
+}
+#buffer{        /* i set buffer as the flex box*/
+/*
+    box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+*/
 	display: flex;
 	width: 100%;
 	flex-direction: row;
@@ -55,12 +141,13 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	padding: 6px 14px 6px 14px;
-	background-color: black;
-
-
+	background-color: black;   
 }
-
+#menubox{
+    display: none;
+}
 .top-bar-item{
+    display: block;         /*I set display as block*/
 	box-sizing: border-box;
 	padding: 4px 6px;
 	margin: 0 2px;
@@ -69,6 +156,7 @@ body{
 	text-align: center;
 	font-size: 18px;
 	color: #d4bb55;
+    width: auto;
 	height: 36px;
 	border-bottom: black solid 1px;
 	transition: all 0.2s ease 0s;
@@ -95,6 +183,7 @@ body{
 }
 
 .logo{
+    display: flex;          /*I set display as flex*/
 	height: 100%;
 	
 }
@@ -144,7 +233,7 @@ body{
 	transform: translate(-50% , -50%);
 	font-size: 32px;
 }
-
+}
 
 
 
